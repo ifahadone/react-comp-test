@@ -2790,4 +2790,3 @@ Typography.defaultProps = {
 };
 
 export { Typography };
-//# sourceMappingURL=index.js.map
