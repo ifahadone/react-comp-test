@@ -12,7 +12,7 @@
     "format:fix": "stylelint \"**/*.scss\" --fix",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format:check": "stylelint \"**/*.scss\"",
-    "prepare": "husky install",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
