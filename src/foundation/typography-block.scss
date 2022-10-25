@@ -1,0 +1,106 @@
+@use "variables" as v;
+@use "typography" as *;
+
+/* ========================
+  Body
+=========================== */
+body {
+  @include base-style;
+}
+
+/* ========================
+  Headlines
+=========================== */
+.headline {
+  &-1 {
+    @include headline-style-1;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+
+  &-2 {
+    @include headline-style-2;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+
+  &-3 {
+    @include headline-style-3;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+
+  &-4 {
+    @include headline-style-4;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+
+  &-5 {
+    @include headline-style-5;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+
+  &-6 {
+    @include headline-style-6;
+
+    &--bold {
+      font-weight: v.$font-family-weight-bold;
+    }
+  }
+}
+
+/* ========================
+  Subheadlines
+=========================== */
+.subheadline {
+  @include subheadline-style;
+
+  &--bold {
+    font-weight: v.$font-family-weight-bold;
+  }
+}
+
+/* ========================
+  Base
+=========================== */
+.base {
+  @include base-style;
+
+  &--bold {
+    font-weight: v.$font-family-weight-bold;
+  }
+}
+
+/* ========================
+  Label
+=========================== */
+.label {
+  @include label-style;
+
+  &--bold {
+    font-weight: v.$font-family-weight-bold;
+  }
+}
+
+/* ========================
+  Helper text
+=========================== */
+.helper-text {
+  @include helper-text-style;
+
+  &--bold {
+    font-weight: v.$font-family-weight-bold;
+  }
+}

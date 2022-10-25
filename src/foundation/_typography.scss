@@ -1,0 +1,181 @@
+@use "variables" as v;
+
+/* ========================
+  Lato font
+=========================== */
+$lato-font-url: "assets";
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-thin;
+  font-style: normal;
+  src: url("#{$lato-font-url}/Lato-Thin.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-thin;
+  font-style: italic;
+  src: url("#{$lato-font-url}/Lato-ThinItalic.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-light;
+  font-style: normal;
+  src: url("#{$lato-font-url}/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-light;
+  font-style: italic;
+  src: url("#{$lato-font-url}/Lato-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-regular;
+  font-style: normal;
+  src: url("#{$lato-font-url}/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-regular;
+  font-style: italic;
+  src: url("#{$lato-font-url}/Lato-Italic.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-bold;
+  font-style: normal;
+  src: url("#{$lato-font-url}/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: v.$font-family-weight-bold;
+  font-style: italic;
+  src: url("#{$lato-font-url}/Lato-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  font-style: normal;
+  src: url("#{$lato-font-url}/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-weight: 900;
+  font-style: italic;
+  src: url("#{$lato-font-url}/Lato-BlackItalic.ttf");
+}
+
+/* ========================
+  Headlines
+=========================== */
+@mixin headline-style-1 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h1;
+  line-height: v.$font-family-line-height-display-h1;
+}
+
+@mixin headline-style-2 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h2;
+  line-height: v.$font-family-line-height-display-h2;
+}
+
+@mixin headline-style-3 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h3;
+  line-height: v.$font-family-line-height-display-h3;
+}
+
+@mixin headline-style-4 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h4;
+  line-height: v.$font-family-line-height-display-h4;
+}
+
+@mixin headline-style-5 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h5;
+  line-height: v.$font-family-line-height-display-h5;
+}
+
+@mixin headline-style-6 {
+  color: v.$brand-color-acra-bronze;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-display-h6;
+  line-height: v.$font-family-line-height-display-h6;
+}
+
+/* ========================
+  Subheadlines
+=========================== */
+@mixin subheadline-style {
+  color: v.$functional-color-bnw-black;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-subheadline;
+  line-height: v.$font-family-line-height-subheadline;
+}
+
+/* ========================
+  Base
+=========================== */
+@mixin base-style {
+  color: v.$functional-color-bnw-black;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-base;
+  line-height: v.$font-family-line-height-base;
+}
+
+/* ========================
+  Label
+=========================== */
+@mixin label-style {
+  color: v.$functional-color-bnw-grey-dark;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-label;
+  line-height: v.$font-family-line-height-label;
+}
+
+/* ========================
+  Helper text
+=========================== */
+@mixin helper-text-style {
+  color: v.$functional-color-bnw-grey-dark;
+  font-family: v.$font-family;
+  font-style: normal;
+  font-weight: v.$font-family-weight-regular;
+  font-size: v.$font-family-size-helper-text;
+  line-height: v.$font-family-line-height-helper-text;
+}

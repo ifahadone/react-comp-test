@@ -1,0 +1,45 @@
+@use "variables" as v;
+@import "system-icon";
+@import "sprite";
+
+/* ------------ System icons -------------- */
+.icon-sys {
+  speak: none;
+  color: inherit;
+  font-size: v.$icon-sys-size-24;
+  width: v.$icon-sys-size-24;
+  height: v.$icon-sys-size-24;
+  line-height: v.$icon-sys-size-24;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::before {
+    color: inherit;
+  }
+
+  &.size-40 {
+    font-size: v.$icon-sys-size-40;
+    width: v.$icon-sys-size-40;
+    height: v.$icon-sys-size-40;
+    line-height: v.$icon-sys-size-40;
+  }
+
+  &.size-80 {
+    font-size: v.$icon-sys-size-80;
+    width: v.$icon-sys-size-80;
+    height: v.$icon-sys-size-80;
+    line-height: v.$icon-sys-size-80;
+  }
+}
+
+/* ------------ Illustrative icons -------------- */
+
+.icon-illus {
+  speak: none;
+  font-size: v.$icon-illus-size;
+  width: v.$icon-illus-size;
+  height: v.$icon-illus-size;
+  line-height: v.$icon-illus-size;
+}

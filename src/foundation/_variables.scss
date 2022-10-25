@@ -1,0 +1,527 @@
+/**
+ * @author Theon Thai
+ * @email [theon.thai@accenture.com]
+ * @create date 2022-09-19 17:30:38
+ * @modify date 2022-09-19 17:30:38
+ * @desc [Variables for all the design tokens that will be shared across the system]
+ */
+
+/* ========================
+  Typography
+=========================== */
+$font-family: "Lato", helvetica, arial, sans-serif;
+$font-family-weight-thin: 100;
+$font-family-weight-light: 300;
+$font-family-weight-regular: 400;
+$font-family-weight-bold: 700;
+$font-family-weight-black: 900;
+$font-family-size-display-h1: 54px;
+$font-family-line-height-display-h1: 81px;
+$font-family-size-display-h2: 44px;
+$font-family-line-height-display-h2: 66px;
+$font-family-size-display-h3: 32px;
+$font-family-line-height-display-h3: 48px;
+$font-family-size-display-h4: 26px;
+$font-family-line-height-display-h4: 39px;
+$font-family-size-display-h5: 22px;
+$font-family-line-height-display-h5: 33px;
+$font-family-size-display-h6: 20px;
+$font-family-line-height-display-h6: 30px;
+$font-family-size-subheadline: 18px;
+$font-family-line-height-subheadline: 27px;
+$font-family-size-base: 16px;
+$font-family-line-height-base: 24px;
+$font-family-size-label: 14px;
+$font-family-line-height-label: 21px;
+$font-family-size-helper-text: 12px;
+$font-family-line-height-helper-text: 18px;
+
+/* ========================
+  Colours
+=========================== */
+
+/* Brand Colours - bizfile Gradient */
+$brand-color-bizfile-gradient: linear-gradient(
+  93deg,
+  #f26b2f 2.42%,
+  #fbae43 97.58%
+);
+$brand-color-bizfile-gradient-alt: linear-gradient(
+  138.14deg,
+  #f26b2f 11.29%,
+  #fbae43 57.69%
+);
+
+/* Brand Colours - bizfile Orange */
+$brand-color-bizfile-orange-dark: #d66e1d;
+$brand-color-bizfile-orange: #f78d3a;
+$brand-color-bizfile-orange-2: #ffaa67;
+$brand-color-bizfile-orange-3: #ffc395;
+$brand-color-bizfile-orange-4: #ffd6b7;
+$brand-color-bizfile-orange-5: #fff0e4;
+
+/* Brand Colours - Vibrant Orange and Vibrant Yellow */
+$brand-color-vibrant-orange-dark: #bc4e1e;
+$brand-color-vibrant-orange: #f26b2f;
+$brand-color-vibrant-orange-2: #ff9262;
+$brand-color-vibrant-orange-3: #ffb898;
+$brand-color-vibrant-orange-4: #ffd7c5;
+$brand-color-vibrant-orange-5: #fdeae1;
+$brand-color-vibrant-yellow-dark: #d98e26;
+$brand-color-vibrant-yellow: #fbae43;
+$brand-color-vibrant-yellow-2: #ffc77a;
+$brand-color-vibrant-yellow-3: #ffdcab;
+$brand-color-vibrant-yellow-4: #ffeed7;
+$brand-color-vibrant-yellow-5: #fff8ef;
+
+/* Brand Colours - ACRA Bronze */
+$brand-color-acra-bronze-dark: #635546;
+$brand-color-acra-bronze: #7d6a55;
+$brand-color-acra-bronze-2: #a89581;
+$brand-color-acra-bronze-3: #d0c3b4;
+$brand-color-acra-bronze-4: #f0ece7;
+$brand-color-acra-bronze-5: #f8f7f5;
+
+/* Functional Colours */
+
+/* Functional Colours - B&W Tones */
+$functional-color-bnw-black: #323232;
+$functional-color-bnw-grey-dark: #6d6d6d;
+$functional-color-bnw-grey: #c7c7c7;
+$functional-color-bnw-grey-light: #e3e3e3;
+$functional-color-bnw-grey-snow: #f6f6f6;
+$functional-color-bnw-white: #fff;
+
+/* Functional Colours - Turqoise Tones */
+$functional-color-turqoise-dark: #215163;
+$functional-color-turqoise: #346f85;
+$functional-color-turqoise-2: #6794a5;
+$functional-color-turqoise-3: #a2bcc6;
+$functional-color-turqoise-4: #c8d5da;
+$functional-color-turqoise-5: #f3f6f8;
+
+/* System Status Colour */
+
+/* System Status Colours - Denotive Colours */
+$system-status-color-success-1: #36801d;
+$system-status-color-success-2: #308c10;
+$system-status-color-success-3: #449e24;
+$system-status-color-success-4: #96cc84;
+$system-status-color-success-5: #f9fff8;
+$system-status-color-error-1: #a81616;
+$system-status-color-error-2: #b71c1c;
+$system-status-color-error-3: #c63d3d;
+$system-status-color-error-4: #e39999;
+$system-status-color-error-5: #fef6f6;
+$system-status-color-informative-1: #025989;
+$system-status-color-informative-2: #0e6798;
+$system-status-color-informative-3: #2583b8;
+$system-status-color-informative-4: #469ccc;
+$system-status-color-informative-5: #f8fdff;
+$system-status-color-warning-1: #dfb214;
+$system-status-color-warning-2: #efc223;
+$system-status-color-warning-3: #fdd549;
+$system-status-color-warning-4: #ffe073;
+$system-status-color-warning-5: #fefbef;
+$system-status-color-visited-link: #67467b;
+
+/* ========================
+  Icon
+=========================== */
+$icon-sys-size-24: 24px;
+$icon-sys-size-40: 40px;
+$icon-sys-size-80: 80px;
+$icon-illus-size: 48px;
+
+/* ========================
+  Elevation
+=========================== */
+$elevation-1-box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+$elevation-2-box-shadow: 0 8px 8px rgb(0 0 0 / 10%);
+$elevation-3-box-shadow: 0 12px 12px rgb(0 0 0 / 10%);
+$elevation-4-box-shadow: 0 16px 16px rgb(0 0 0 / 10%);
+$elevation-5-box-shadow: 0 24px 16px rgb(0 0 0 / 10%);
+$elevation-turqoise-glow-border: 1px solid $functional-color-turqoise-3;
+$elevation-turqoise-glow-box-shadow: 0 8px 8px rgb(52 111 133 / 20%);
+
+/* ========================
+  Spacing
+=========================== */
+$base-spacing: 4px;
+
+/* ========================
+  Button
+=========================== */
+// Button Default
+$button-border-radius: 30px;
+$button-column-gap: $base-spacing; //4px
+$button-border-width: 1px;
+
+// Button Medium Size
+$button-medium-height: $base-spacing * 12; //48px
+$button-medium-padding-y: $base-spacing * 3; //12px
+$button-medium-padding-x: $base-spacing * 6; //24px
+$button-medium-text-size: $font-family-size-base;
+$button-medium-text-line-height: $font-family-line-height-base;
+
+// Button Large Size
+$button-large-height: $base-spacing * 14; //56px
+$button-large-padding-y: $base-spacing * 4; //16px
+$button-large-padding-x: $base-spacing * 8; //32px
+$button-large-text-size: $font-family-size-subheadline;
+$button-large-text-line-height: $font-family-line-height-subheadline;
+
+// =========Primary Button Type=========
+$button-primary-background-color: $functional-color-turqoise;
+$button-primary-text-color: $functional-color-bnw-white;
+
+// Primary Active
+$button-primary-active-background-color: $functional-color-turqoise-dark;
+
+// Primary hover
+$button-primary-hover-background-color: $functional-color-turqoise-2;
+
+// Primary disabled
+$button-primary-disabled-background-color: $functional-color-bnw-grey;
+$button-primary-disabled-text-color: $functional-color-bnw-white;
+
+// =========Secondary Button Type=========
+$button-secondary-background-color: $functional-color-bnw-white;
+$button-secondary-text-color: $functional-color-turqoise;
+$button-secondary-border-color: $functional-color-turqoise-2;
+
+// Secondary Active
+$button-secondary-active-background-color: $functional-color-bnw-white;
+$button-secondary-active-text-color: $functional-color-turqoise-dark;
+$button-secondary-active-border-color: $functional-color-turqoise-dark;
+
+// Secondary hover
+$button-secondary-hover-background-color: $functional-color-turqoise-5;
+$button-secondary-hover-text-color: $functional-color-turqoise;
+
+// Secondary disabled
+$button-secondary-disabled-background-color: $functional-color-bnw-grey-snow;
+$button-secondary-disabled-text-color: $functional-color-bnw-grey;
+$button-secondary-disabled-border-color: $functional-color-bnw-grey;
+
+// =========Tertiary Button Type=========
+$button-tertiary-background-color: $functional-color-turqoise-5;
+$button-tertiary-text-color: $functional-color-turqoise;
+
+// Tertiary Active
+$button-tertiary-active-background-color: $functional-color-turqoise-4;
+$button-tertiary-active-text-color: $functional-color-turqoise-dark;
+
+// Tertiary Hover
+$button-tertiary-hover-background-color: $functional-color-turqoise;
+$button-tertiary-hover-text-color: $functional-color-bnw-white;
+
+// Tertiary Disabled
+$button-tertiary-disabled-background-color: $functional-color-bnw-grey-snow;
+$button-tertiary-disabled-text-color: $functional-color-bnw-grey;
+
+// ========Dropdown Button Type========
+$button-dropdown-column-gap: $base-spacing * 2; //8px
+
+// =========Quiet Button Type=========
+$button-quiet-text-size: $font-family-size-base;
+$button-quiet-text-line-height: $font-family-line-height-base;
+$button-quiet-text-color: $functional-color-turqoise;
+$button-quiet-background-color: transparent;
+
+// Quiet Active
+$button-quiet-active-text-color: $functional-color-turqoise-dark;
+
+// Quiet Hover
+$button-quiet-hover-text-color: $functional-color-turqoise;
+$button-quiet-hover-text-decoration: underline;
+
+// Quiet Disabled
+$button-quiet-disabled-text-color: $functional-color-bnw-grey;
+
+// ========Icon Button Type========
+$button-icon-medium-padding: $base-spacing * 3; //12px
+$button-icon-large-padding: $base-spacing * 4; //16px
+
+/* ========================
+  Hyperlink
+=========================== */
+$hyperlink-default-color: $functional-color-turqoise;
+$hyperlink-hover-color: $functional-color-turqoise-dark;
+$hyperlink-active-color: $functional-color-turqoise-dark;
+$hyperlink-visited-color: $system-status-color-visited-link;
+
+/* ========================
+  Tooltip
+=========================== */
+$tooltip-max-width: 318px;
+$tooltip-column-gap: $base-spacing; //4px
+$tooltip-padding: $base-spacing * 4; //16px
+$tooltip-border-radius: $base-spacing * 2; //8px
+$tooltip-drop-shadow: drop-shadow(0 8px 8px rgb(0 0 0 / 10%));
+$tooltip-text-color: $functional-color-bnw-white;
+$tooltip-background-color: $functional-color-bnw-black;
+$tooltip-icon-color: $functional-color-turqoise;
+
+/* ========================
+  Divider
+=========================== */
+$divider-horizontal-solid-height: 1px;
+$divider-horizontal-solid-border-top: 1px solid $functional-color-bnw-grey-light;
+$divider-horizontal-dotted-height: 2px;
+$divider-horizontal-dotted-background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSIyIiB2aWV3Qm94PSIwIDAgOCAyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIgZmlsbD0iI0E4OTU4MSIvPgo8L3N2Zz4K")
+  repeat-x;
+$divider-horizontal-dotted-background-size: 8px 2px;
+$divider-vertical-border-left: 1px solid $functional-color-bnw-grey-light;
+
+/* ========================
+  Chips
+========================== */
+$chips-padding-x: 16px;
+$chips-padding-y: 4px;
+$chips-border-radius: 8px;
+$chips-flex-gap: 8px;
+$chips-multi-select-icon-size: 24px;
+$chips-default-multi-select-icon-unicode: "\f104"; // "action-add"
+$chips-selected-multi-select-icon-unicode: "\f13c"; // "general-check"
+$chips-selected-hover-multi-select-icon-unicode: "\f16e"; // "registry-close_a_local_company"
+$chips-multi-select-icon-color: $functional-color-turqoise-3;
+$chips-hover-multi-select-icon-color: $functional-color-turqoise;
+$chips-default-border: 1px solid $functional-color-turqoise-3;
+$chips-default-text-color: $functional-color-bnw-grey-dark;
+$chips-default-background-color: $functional-color-bnw-white;
+$chips-default-hover-border: 1px solid $functional-color-turqoise;
+$chips-default-hover-background-color: $functional-color-bnw-white;
+$chips-default-hover-text-color: $functional-color-turqoise;
+$chips-default-selected-border: 1px solid $functional-color-turqoise-3;
+$chips-default-selected-background-color: $functional-color-turqoise-5;
+$chips-default-selected-text-color: $functional-color-turqoise;
+$chips-default-disabled-border: 1px solid $functional-color-bnw-grey;
+$chips-default-disabled-text-color: $functional-color-bnw-grey;
+$chips-default-disabled-background-color: $functional-color-bnw-grey-snow;
+
+/* ========================
+  List
+=========================== */
+$list-ul-padding: 0 0 0 32px;
+$list-ul-li-padding: 0;
+$list-ul-li-margin-bottom: 8px;
+$list-ul-li-before-width: 7px;
+$list-ul-li-before-height: 7px;
+$list-ul-li-before-left: -23.5px;
+$list-ul-li-before-top: 8.5px;
+$list-ul-li-before-background: $functional-color-bnw-black;
+$list-ul-li-before-border: 1px solid $functional-color-bnw-black;
+$list-ul-li-before-border-radius: 50%;
+$list-ul-li-li-before-background: $functional-color-bnw-white;
+$list-ul-li-li-li-before-border-radius: 0;
+$list-ul-li-li-li-before-background: $functional-color-bnw-black;
+$list-ul-li-li-li-li-before-background: $functional-color-bnw-white;
+$list-ul-content-margin-bottom: 8px;
+$list-ol-margin: 0;
+$list-ol-padding: 0 0 0 32px;
+$list-ol-li-padding: 0;
+$list-ol-li-margin-bottom: 8px;
+$list-ol-li-before-width: 24px;
+$list-ol-li-before-height: 24px;
+$list-ol-li-before-left: -32px;
+$list-ol-li-before-top: 0;
+$list-ol-li-before-font-weight: $font-family-weight-bold;
+$list-ol-content-margin-bottom: 8px;
+
+/* ========================
+  Selection
+=========================== */
+$selection-row-gap: 8px;
+$selection-margin: 0;
+$selection-padding: 0;
+$selection-container-hover-label-border: 1px solid $functional-color-turqoise;
+$selection-container-hover-input-before-color: $functional-color-turqoise;
+$selection-label-padding: 12px 16px 12px 48px;
+$selection-label-background: $functional-color-bnw-white;
+$selection-label-border: 1px solid $functional-color-turqoise-3;
+$selection-label-border-radius: 8px;
+$selection-input-zindex: 1;
+$selection-input-width: 24px;
+$selection-input-height: 24px;
+$selection-input-top: 12px;
+$selection-input-left: 16px;
+$selection-input-margin: 0;
+$selection-input-before-font-size: 24px;
+$selection-input-before-color: $functional-color-turqoise-3;
+$selection-input-checked-before-color: $functional-color-turqoise;
+$selection-input-disabled-checked-before-color: $functional-color-bnw-grey;
+$selection-input-disabled-checked-label-color: $functional-color-bnw-grey-dark;
+$selection-input-checked-label-background: $functional-color-turqoise-5;
+$selection-input-disabled-color: $functional-color-bnw-grey;
+$selection-input-disabled-before-color: $functional-color-bnw-grey;
+$selection-input-disabled-label-background: $functional-color-bnw-grey-snow;
+$selection-input-disabled-label-border-color: $functional-color-bnw-grey;
+$selection-input-disabled-label-color: $functional-color-bnw-grey;
+$selection-input-checkbox-before-content: "\f17a"; // toggle-checkbox_unchecked
+$selection-input-checkbox-checked-before-content: "\f176"; // toggle-checkbox_checked_fill
+
+$selection-input-radiobutton-before-content: "\f17c"; // toggle-radiobutton_unselected
+$selection-input-radiobutton-checked-before-content: "\f17b"; // toggle-radiobutton_selected
+$selection-input-radiobutton-horizontal-layout-column-gap: 12px;
+
+/* ========================
+  Form Fields
+========================== */
+
+// =========Dropdown Menu=========
+$dropdown-menu-system-icon-font-family: system-icon;
+$dropdown-menu-arrow-icon-unicode: "\f160"; // "navigation-arrow_drop_down"
+$dropdown-menu-arrow-icon-font-size: 24px;
+$dropdown-menu-arrow-icon-box-size: 24px;
+$dropdown-menu-arrow-icon-color: $functional-color-turqoise;
+$dropdown-menu-select-column-gap: $base-spacing;
+$dropdown-menu-label-text-height: $font-family-line-height-base;
+$dropdown-menu-height: $base-spacing * 12; //48px
+$dropdown-menu-border-style: 1px solid $functional-color-turqoise-3;
+$dropdown-menu-hover-border-style: 1px solid $functional-color-turqoise;
+$dropdown-menu-background-color: $functional-color-bnw-white;
+$dropdown-menu-border-radius: $base-spacing * 2; //8px
+$dropdown-menu-padding-x: $base-spacing * 4; //16px
+$dropdown-menu-padding-y: $base-spacing * 3; //12px
+
+$dropdown-menu-placeholder-text-color: $functional-color-bnw-grey-dark;
+
+// Success State
+$dropdown-menu-success-border-style: 1px solid $system-status-color-success-1;
+$dropdown-menu-success-hover-border-style: 1px solid
+  $system-status-color-success-4;
+$dropdown-menu-success-helper-text-color: $system-status-color-success-1;
+$dropdown-menu-success-active-border-style: 1px solid
+  $system-status-color-success-1;
+
+// Error State
+$dropdown-menu-error-border-style: 1px solid $system-status-color-error-3;
+$dropdown-menu-error-hover-border-style: 1px solid $system-status-color-error-4;
+$dropdown-menu-error-helper-text-color: $system-status-color-error-3;
+$dropdown-menu-error-active-border-style: 1px solid $system-status-color-error-3;
+
+// Disabled State
+$dropdown-menu-disabled-background-color: $functional-color-bnw-grey-snow;
+$dropdown-menu-disabled-border-style: 1px solid $functional-color-bnw-grey;
+$dropdown-menu-disabled-hover-border-style: 1px solid $functional-color-bnw-grey;
+$dropdown-menu-disabled-helper-text-color: $functional-color-bnw-grey-dark;
+$dropdown-menu-disabled-select-placeholder-color: $functional-color-bnw-grey-dark;
+
+// =========Selection=========
+$selection-form-caption-margin-bottom: 4px;
+$selection-form-success-caption-color: $system-status-color-success-1;
+$selection-form-error-caption-color: $system-status-color-error-3;
+
+// =========Text area=========
+$textarea-field-width: 100%;
+$textarea-field-padding: 12px 16px;
+$textarea-field-margin: 4px 0;
+$textarea-field-background: $functional-color-bnw-white;
+$textarea-field-border: 1px solid $functional-color-turqoise-3;
+$textarea-field-border-radius: 8px;
+$textarea-field-placeholder-color: $functional-color-bnw-grey-dark;
+$textarea-field-hover-border-color: $functional-color-turqoise;
+$textarea-field-focus-border-color: $functional-color-turqoise;
+$textarea-field-disabled-background: $functional-color-bnw-grey-snow;
+$textarea-field-disabled-border-color: $functional-color-bnw-grey;
+$textarea-field-disabled-color: $functional-color-bnw-grey-dark;
+$textarea-field-disabled-placeholder-color: $functional-color-bnw-grey;
+$textarea-success-field-border-color: $system-status-color-success-1;
+$textarea-success-field-hover-border-color: $system-status-color-success-4;
+$textarea-success-caption-color: $system-status-color-success-1;
+$textarea-error-field-border-color: $system-status-color-error-3;
+$textarea-error-field-hover-border-color: $system-status-color-error-4;
+$textarea-error-caption-color: $system-status-color-error-3;
+
+// =========Text field=========
+$textfield-column-gap: 16px;
+$textfield-field-color: $functional-color-bnw-grey-dark;
+$textfield-field-padding: 12px 16px;
+$textfield-field-margin: 4px 0;
+$textfield-field-background: $functional-color-bnw-white;
+$textfield-field-border: 1px solid $functional-color-turqoise-3;
+$textfield-field-border-radius: 8px;
+$textfield-field-hover-border-color: $functional-color-turqoise;
+$textfield-field-input-prefix-padding-right: 16px;
+$textfield-field-input-prefix-margin-right: 16px;
+$textfield-field-input-prefix-border-right: 1px solid
+  $functional-color-bnw-grey-light;
+$textfield-field-input-suffix-padding-left: 16px;
+$textfield-field-input-suffix-margin-left: 16px;
+$textfield-field-input-suffix-border-left: 1px solid
+  $functional-color-bnw-grey-light;
+$textfield-field-input-icon-margin-left: 8px;
+$textfield-field-input-icon-color: $functional-color-turqoise;
+$textfield-input-padding: 0;
+$textfield-input-margin: 0;
+$textfield-input-border: none;
+$textfield-input-background: transparent;
+$textfield-input-placeholder-color: $functional-color-bnw-grey-dark;
+$textfield-input-disabled-color: $functional-color-bnw-grey-dark;
+$textfield-input-disabled-placeholder-color: $functional-color-bnw-grey;
+$textfield-input-success-field-border-color: $system-status-color-success-1;
+$textfield-input-success-field-border-color: $system-status-color-success-4;
+$textfield-input-success-caption-color: $system-status-color-success-1;
+$textfield-input-error-field-border-color: $system-status-color-error-3;
+$textfield-input-error-field-border-color: $system-status-color-error-4;
+$textfield-input-error-caption-color: $system-status-color-error-3;
+$textfield-diabled-field-background-color: $functional-color-bnw-grey-snow;
+$textfield-diabled-field-border-color: $functional-color-bnw-grey;
+$textfield-diabled-input-prefix-border-color: $functional-color-bnw-grey;
+$textfield-diabled-input-prefix-color: $functional-color-bnw-grey;
+$textfield-diabled-input-icon-color: $functional-color-bnw-grey;
+
+/* ========================
+  Metadata
+========================== */
+$metadata-icon-size: 3px;
+$metadata-icon-border-radius: 50%;
+$metadata-icon-to-label-gap: 8px;
+$metadata-icon-color: $functional-color-bnw-grey-dark;
+$metadata-horizontal-gap: 8px;
+$metadata-vertical-gap: 8px;
+
+/* ========================
+  Breadcrumb
+========================== */
+$breadcrumb-label-color: $functional-color-bnw-black;
+$breadcrumb-link-color: $hyperlink-default-color;
+$breadcrumb-link-active-color: $hyperlink-active-color;
+$breadcrumb-icon-font: system-icon;
+$breadcrumb-icon-unicode: "\f167"; // navigation-chevron_right
+$breadcrumb-icon-size: 24px;
+$breadcrumb-icon-color: $functional-color-bnw-grey;
+$breadcrumb-selection-width: 317px;
+$breadcrumb-selection-height: 208px;
+$breadcrumb-selection-background: $functional-color-bnw-white;
+$breadcrumb-selection-hover-background: $functional-color-turqoise-5;
+$breadcrumb-selection-border: 1px solid $functional-color-bnw-grey;
+$breadcrumb-selection-border-radius: 8px;
+
+/* ========================
+  Steps Indicator
+========================== */
+$steps-indicator-padding: 0;
+$steps-indicator-margin: 0;
+$steps-indicator-step-before-font-weight: $font-family-weight-bold;
+$steps-indicator-step-before-width: 32px;
+$steps-indicator-step-before-height: 32px;
+$steps-indicator-step-before-border-radius: 50%;
+$steps-indicator-step-before-margin-bottom: 8px;
+$steps-indicator-step-before-border: 2px solid;
+$steps-indicator-step-after-right: calc(50% + 24px);
+$steps-indicator-step-after-left: 16px;
+$steps-indicator-step-after-width: calc(100% - 48px);
+$steps-indicator-step-after-height: 1px;
+$steps-indicator-step-after-border-top: 1px solid $functional-color-turqoise;
+$steps-indicator-step-done-before-color: $functional-color-turqoise;
+$steps-indicator-step-done-before-border-color: $functional-color-turqoise-3;
+$steps-indicator-step-done-before-background: $functional-color-bnw-white;
+$steps-indicator-step-active-before-color: $functional-color-bnw-white;
+$steps-indicator-step-active-before-border-color: $functional-color-turqoise;
+$steps-indicator-step-active-before-background: $functional-color-turqoise;
+$steps-indicator-step-disabled-before-color: $functional-color-bnw-grey;
+$steps-indicator-step-disabled-before-border-color: $functional-color-bnw-white;
+$steps-indicator-step-disabled-before-background: $functional-color-bnw-grey;
+$steps-indicator-step-disabled-after-border-color: $functional-color-bnw-grey;
