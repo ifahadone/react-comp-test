@@ -1,0 +1,28 @@
+@use "variables" as v;
+
+.elevation {
+  &-1 {
+    box-shadow: v.$elevation-1-box-shadow;
+  }
+
+  &-2 {
+    box-shadow: v.$elevation-2-box-shadow;
+  }
+
+  &-turqoise-glow {
+    border: v.$elevation-turqoise-glow-border;
+    box-shadow: v.$elevation-turqoise-glow-box-shadow;
+  }
+
+  &-3 {
+    box-shadow: v.$elevation-3-box-shadow;
+  }
+
+  &-4 {
+    box-shadow: v.$elevation-4-box-shadow;
+  }
+
+  &-5 {
+    box-shadow: v.$elevation-5-box-shadow;
+  }
+}

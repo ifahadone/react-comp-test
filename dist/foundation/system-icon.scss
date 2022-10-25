@@ -1,0 +1,646 @@
+$system-icon-font: "system-icon";
+
+@font-face {
+  font-family: $system-icon-font;
+  src:
+    url("assets/system-icon.eot?bb506c80a92c3bd7be527009aae45632#iefix") format("embedded-opentype"),
+    url("assets/system-icon.woff2?bb506c80a92c3bd7be527009aae45632") format("woff2"),
+    url("assets/system-icon.woff?bb506c80a92c3bd7be527009aae45632") format("woff"),
+    url("assets/system-icon.ttf?bb506c80a92c3bd7be527009aae45632") format("truetype"),
+    url("assets/system-icon.svg?bb506c80a92c3bd7be527009aae45632#system-icon") format("svg");
+}
+
+i[class^="icon-sys-"]::before,
+i[class*=" icon-sys-"]::before {
+  font-family: system-icon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$system-icon-map: (
+  "action-add_to_bookmark": "\f101",
+  "action-add_to_cart": "\f102",
+  "action-add_to_favourites": "\f103",
+  "action-add": "\f104",
+  "action-added_to_bookmark": "\f105",
+  "action-attach": "\f106",
+  "action-bookmarks": "\f107",
+  "action-cart": "\f108",
+  "action-clear": "\f109",
+  "action-close": "\f10a",
+  "action-delete_forever": "\f10b",
+  "action-delete_sweep": "\f10c",
+  "action-delete": "\f10d",
+  "action-download_complete": "\f10e",
+  "action-download": "\f10f",
+  "action-edit": "\f110",
+  "action-enter": "\f111",
+  "action-favourited": "\f112",
+  "action-filter": "\f113",
+  "action-hide": "\f114",
+  "action-maximise": "\f115",
+  "action-minimise": "\f116",
+  "action-more_horizontal": "\f117",
+  "action-more_vertical": "\f118",
+  "action-open_in_full": "\f119",
+  "action-open_in_new_tab": "\f11a",
+  "action-redo": "\f11b",
+  "action-refresh": "\f11c",
+  "action-save": "\f11d",
+  "action-search": "\f11e",
+  "action-share": "\f11f",
+  "action-show": "\f120",
+  "action-sort_by_alpha": "\f121",
+  "action-sort_up_down": "\f122",
+  "action-sort_updown": "\f123",
+  "action-sort": "\f124",
+  "action-swap": "\f125",
+  "action-undo": "\f126",
+  "action-upload": "\f127",
+  "business_local_company": "\f128",
+  "business-approved_liquidator": "\f129",
+  "business-business": "\f12a",
+  "business-foreign_company": "\f12b",
+  "business-group_of_companies": "\f12c",
+  "business-limited_liability_partnership": "\f12d",
+  "business-limited_partnership": "\f12e",
+  "business-public_accounting_firm": "\f12f",
+  "business-public_accounting": "\f130",
+  "document-document": "\f131",
+  "document-folder": "\f132",
+  "document-image": "\f133",
+  "document-media": "\f134",
+  "document-pdf": "\f135",
+  "document-print": "\f136",
+  "document-quote": "\f137",
+  "general-account": "\f138",
+  "general-action": "\f139",
+  "general-bar_chart": "\f13a",
+  "general-calendar": "\f13b",
+  "general-check": "\f13c",
+  "general-credit_card": "\f13d",
+  "general-directions": "\f13e",
+  "general-empty": "\f13f",
+  "general-help": "\f140",
+  "general-history": "\f141",
+  "general-home": "\f142",
+  "general-info": "\f143",
+  "general-light_bulb": "\f144",
+  "general-loading": "\f145",
+  "general-location": "\f146",
+  "general-lock": "\f147",
+  "general-login": "\f148",
+  "general-mail": "\f149",
+  "general-map": "\f14a",
+  "general-media": "\f14b",
+  "general-message": "\f14c",
+  "general-microsoft_dynamics": "\f14d",
+  "general-money": "\f14e",
+  "general-notification": "\f14f",
+  "general-phone": "\f150",
+  "general-pie_chart": "\f151",
+  "general-plane": "\f152",
+  "general-restricted": "\f153",
+  "general-settings": "\f154",
+  "general-thumbs_up": "\f155",
+  "general-timer": "\f156",
+  "general-update": "\f157",
+  "general-verified_badge": "\f158",
+  "general-verified_shield": "\f159",
+  "general-walk": "\f15a",
+  "industries-biotech": "\f15b",
+  "industries-fnb": "\f15c",
+  "industries-hotel": "\f15d",
+  "navigation-arrow_back": "\f15e",
+  "navigation-arrow_down": "\f15f",
+  "navigation-arrow_drop_down": "\f160",
+  "navigation-arrow_drop_up": "\f161",
+  "navigation-arrow_forward": "\f162",
+  "navigation-arrow_left": "\f163",
+  "navigation-arrow_right": "\f164",
+  "navigation-arrow_up": "\f165",
+  "navigation-chevron_left": "\f166",
+  "navigation-chevron_right": "\f167",
+  "navigation-double_chevron_left": "\f168",
+  "navigation-double_chevron_right": "\f169",
+  "navigation-expand_less": "\f16a",
+  "navigation-expand_more": "\f16b",
+  "registry-annual_filing": "\f16c",
+  "registry-charge_registration": "\f16d",
+  "registry-close_a_local_company": "\f16e",
+  "registry-make_changes": "\f16f",
+  "registry-start_company": "\f170",
+  "registry-update_share_info": "\f171",
+  "state-error": "\f172",
+  "state-informative": "\f173",
+  "state-success": "\f174",
+  "state-warning": "\f175",
+  "toggle-checkbox_checked_fill": "\f176",
+  "toggle-checkbox_checked_outline": "\f177",
+  "toggle-checkbox_indeterminate_fill": "\f178",
+  "toggle-checkbox_indeterminate_outline": "\f179",
+  "toggle-checkbox_unchecked": "\f17a",
+  "toggle-radiobutton_selected": "\f17b",
+  "toggle-radiobutton_unselected": "\f17c",
+);
+
+.icon-sys-action-add_to_bookmark::before {
+  content: map-get($system-icon-map, "action-add_to_bookmark");
+}
+
+.icon-sys-action-add_to_cart::before {
+  content: map-get($system-icon-map, "action-add_to_cart");
+}
+
+.icon-sys-action-add_to_favourites::before {
+  content: map-get($system-icon-map, "action-add_to_favourites");
+}
+
+.icon-sys-action-add::before {
+  content: map-get($system-icon-map, "action-add");
+}
+
+.icon-sys-action-added_to_bookmark::before {
+  content: map-get($system-icon-map, "action-added_to_bookmark");
+}
+
+.icon-sys-action-attach::before {
+  content: map-get($system-icon-map, "action-attach");
+}
+
+.icon-sys-action-bookmarks::before {
+  content: map-get($system-icon-map, "action-bookmarks");
+}
+
+.icon-sys-action-cart::before {
+  content: map-get($system-icon-map, "action-cart");
+}
+
+.icon-sys-action-clear::before {
+  content: map-get($system-icon-map, "action-clear");
+}
+
+.icon-sys-action-close::before {
+  content: map-get($system-icon-map, "action-close");
+}
+
+.icon-sys-action-delete_forever::before {
+  content: map-get($system-icon-map, "action-delete_forever");
+}
+
+.icon-sys-action-delete_sweep::before {
+  content: map-get($system-icon-map, "action-delete_sweep");
+}
+
+.icon-sys-action-delete::before {
+  content: map-get($system-icon-map, "action-delete");
+}
+
+.icon-sys-action-download_complete::before {
+  content: map-get($system-icon-map, "action-download_complete");
+}
+
+.icon-sys-action-download::before {
+  content: map-get($system-icon-map, "action-download");
+}
+
+.icon-sys-action-edit::before {
+  content: map-get($system-icon-map, "action-edit");
+}
+
+.icon-sys-action-enter::before {
+  content: map-get($system-icon-map, "action-enter");
+}
+
+.icon-sys-action-favourited::before {
+  content: map-get($system-icon-map, "action-favourited");
+}
+
+.icon-sys-action-filter::before {
+  content: map-get($system-icon-map, "action-filter");
+}
+
+.icon-sys-action-hide::before {
+  content: map-get($system-icon-map, "action-hide");
+}
+
+.icon-sys-action-maximise::before {
+  content: map-get($system-icon-map, "action-maximise");
+}
+
+.icon-sys-action-minimise::before {
+  content: map-get($system-icon-map, "action-minimise");
+}
+
+.icon-sys-action-more_horizontal::before {
+  content: map-get($system-icon-map, "action-more_horizontal");
+}
+
+.icon-sys-action-more_vertical::before {
+  content: map-get($system-icon-map, "action-more_vertical");
+}
+
+.icon-sys-action-open_in_full::before {
+  content: map-get($system-icon-map, "action-open_in_full");
+}
+
+.icon-sys-action-open_in_new_tab::before {
+  content: map-get($system-icon-map, "action-open_in_new_tab");
+}
+
+.icon-sys-action-redo::before {
+  content: map-get($system-icon-map, "action-redo");
+}
+
+.icon-sys-action-refresh::before {
+  content: map-get($system-icon-map, "action-refresh");
+}
+
+.icon-sys-action-save::before {
+  content: map-get($system-icon-map, "action-save");
+}
+
+.icon-sys-action-search::before {
+  content: map-get($system-icon-map, "action-search");
+}
+
+.icon-sys-action-share::before {
+  content: map-get($system-icon-map, "action-share");
+}
+
+.icon-sys-action-show::before {
+  content: map-get($system-icon-map, "action-show");
+}
+
+.icon-sys-action-sort_by_alpha::before {
+  content: map-get($system-icon-map, "action-sort_by_alpha");
+}
+
+.icon-sys-action-sort_up_down::before {
+  content: map-get($system-icon-map, "action-sort_up_down");
+}
+
+.icon-sys-action-sort_updown::before {
+  content: map-get($system-icon-map, "action-sort_updown");
+}
+
+.icon-sys-action-sort::before {
+  content: map-get($system-icon-map, "action-sort");
+}
+
+.icon-sys-action-swap::before {
+  content: map-get($system-icon-map, "action-swap");
+}
+
+.icon-sys-action-undo::before {
+  content: map-get($system-icon-map, "action-undo");
+}
+
+.icon-sys-action-upload::before {
+  content: map-get($system-icon-map, "action-upload");
+}
+
+.icon-sys-business_local_company::before {
+  content: map-get($system-icon-map, "business_local_company");
+}
+
+.icon-sys-business-approved_liquidator::before {
+  content: map-get($system-icon-map, "business-approved_liquidator");
+}
+
+.icon-sys-business-business::before {
+  content: map-get($system-icon-map, "business-business");
+}
+
+.icon-sys-business-foreign_company::before {
+  content: map-get($system-icon-map, "business-foreign_company");
+}
+
+.icon-sys-business-group_of_companies::before {
+  content: map-get($system-icon-map, "business-group_of_companies");
+}
+
+.icon-sys-business-limited_liability_partnership::before {
+  content: map-get($system-icon-map, "business-limited_liability_partnership");
+}
+
+.icon-sys-business-limited_partnership::before {
+  content: map-get($system-icon-map, "business-limited_partnership");
+}
+
+.icon-sys-business-public_accounting_firm::before {
+  content: map-get($system-icon-map, "business-public_accounting_firm");
+}
+
+.icon-sys-business-public_accounting::before {
+  content: map-get($system-icon-map, "business-public_accounting");
+}
+
+.icon-sys-document-document::before {
+  content: map-get($system-icon-map, "document-document");
+}
+
+.icon-sys-document-folder::before {
+  content: map-get($system-icon-map, "document-folder");
+}
+
+.icon-sys-document-image::before {
+  content: map-get($system-icon-map, "document-image");
+}
+
+.icon-sys-document-media::before {
+  content: map-get($system-icon-map, "document-media");
+}
+
+.icon-sys-document-pdf::before {
+  content: map-get($system-icon-map, "document-pdf");
+}
+
+.icon-sys-document-print::before {
+  content: map-get($system-icon-map, "document-print");
+}
+
+.icon-sys-document-quote::before {
+  content: map-get($system-icon-map, "document-quote");
+}
+
+.icon-sys-general-account::before {
+  content: map-get($system-icon-map, "general-account");
+}
+
+.icon-sys-general-action::before {
+  content: map-get($system-icon-map, "general-action");
+}
+
+.icon-sys-general-bar_chart::before {
+  content: map-get($system-icon-map, "general-bar_chart");
+}
+
+.icon-sys-general-calendar::before {
+  content: map-get($system-icon-map, "general-calendar");
+}
+
+.icon-sys-general-check::before {
+  content: map-get($system-icon-map, "general-check");
+}
+
+.icon-sys-general-credit_card::before {
+  content: map-get($system-icon-map, "general-credit_card");
+}
+
+.icon-sys-general-directions::before {
+  content: map-get($system-icon-map, "general-directions");
+}
+
+.icon-sys-general-empty::before {
+  content: map-get($system-icon-map, "general-empty");
+}
+
+.icon-sys-general-help::before {
+  content: map-get($system-icon-map, "general-help");
+}
+
+.icon-sys-general-history::before {
+  content: map-get($system-icon-map, "general-history");
+}
+
+.icon-sys-general-home::before {
+  content: map-get($system-icon-map, "general-home");
+}
+
+.icon-sys-general-info::before {
+  content: map-get($system-icon-map, "general-info");
+}
+
+.icon-sys-general-light_bulb::before {
+  content: map-get($system-icon-map, "general-light_bulb");
+}
+
+.icon-sys-general-loading::before {
+  content: map-get($system-icon-map, "general-loading");
+}
+
+.icon-sys-general-location::before {
+  content: map-get($system-icon-map, "general-location");
+}
+
+.icon-sys-general-lock::before {
+  content: map-get($system-icon-map, "general-lock");
+}
+
+.icon-sys-general-login::before {
+  content: map-get($system-icon-map, "general-login");
+}
+
+.icon-sys-general-mail::before {
+  content: map-get($system-icon-map, "general-mail");
+}
+
+.icon-sys-general-map::before {
+  content: map-get($system-icon-map, "general-map");
+}
+
+.icon-sys-general-media::before {
+  content: map-get($system-icon-map, "general-media");
+}
+
+.icon-sys-general-message::before {
+  content: map-get($system-icon-map, "general-message");
+}
+
+.icon-sys-general-microsoft_dynamics::before {
+  content: map-get($system-icon-map, "general-microsoft_dynamics");
+}
+
+.icon-sys-general-money::before {
+  content: map-get($system-icon-map, "general-money");
+}
+
+.icon-sys-general-notification::before {
+  content: map-get($system-icon-map, "general-notification");
+}
+
+.icon-sys-general-phone::before {
+  content: map-get($system-icon-map, "general-phone");
+}
+
+.icon-sys-general-pie_chart::before {
+  content: map-get($system-icon-map, "general-pie_chart");
+}
+
+.icon-sys-general-plane::before {
+  content: map-get($system-icon-map, "general-plane");
+}
+
+.icon-sys-general-restricted::before {
+  content: map-get($system-icon-map, "general-restricted");
+}
+
+.icon-sys-general-settings::before {
+  content: map-get($system-icon-map, "general-settings");
+}
+
+.icon-sys-general-thumbs_up::before {
+  content: map-get($system-icon-map, "general-thumbs_up");
+}
+
+.icon-sys-general-timer::before {
+  content: map-get($system-icon-map, "general-timer");
+}
+
+.icon-sys-general-update::before {
+  content: map-get($system-icon-map, "general-update");
+}
+
+.icon-sys-general-verified_badge::before {
+  content: map-get($system-icon-map, "general-verified_badge");
+}
+
+.icon-sys-general-verified_shield::before {
+  content: map-get($system-icon-map, "general-verified_shield");
+}
+
+.icon-sys-general-walk::before {
+  content: map-get($system-icon-map, "general-walk");
+}
+
+.icon-sys-industries-biotech::before {
+  content: map-get($system-icon-map, "industries-biotech");
+}
+
+.icon-sys-industries-fnb::before {
+  content: map-get($system-icon-map, "industries-fnb");
+}
+
+.icon-sys-industries-hotel::before {
+  content: map-get($system-icon-map, "industries-hotel");
+}
+
+.icon-sys-navigation-arrow_back::before {
+  content: map-get($system-icon-map, "navigation-arrow_back");
+}
+
+.icon-sys-navigation-arrow_down::before {
+  content: map-get($system-icon-map, "navigation-arrow_down");
+}
+
+.icon-sys-navigation-arrow_drop_down::before {
+  content: map-get($system-icon-map, "navigation-arrow_drop_down");
+}
+
+.icon-sys-navigation-arrow_drop_up::before {
+  content: map-get($system-icon-map, "navigation-arrow_drop_up");
+}
+
+.icon-sys-navigation-arrow_forward::before {
+  content: map-get($system-icon-map, "navigation-arrow_forward");
+}
+
+.icon-sys-navigation-arrow_left::before {
+  content: map-get($system-icon-map, "navigation-arrow_left");
+}
+
+.icon-sys-navigation-arrow_right::before {
+  content: map-get($system-icon-map, "navigation-arrow_right");
+}
+
+.icon-sys-navigation-arrow_up::before {
+  content: map-get($system-icon-map, "navigation-arrow_up");
+}
+
+.icon-sys-navigation-chevron_left::before {
+  content: map-get($system-icon-map, "navigation-chevron_left");
+}
+
+.icon-sys-navigation-chevron_right::before {
+  content: map-get($system-icon-map, "navigation-chevron_right");
+}
+
+.icon-sys-navigation-double_chevron_left::before {
+  content: map-get($system-icon-map, "navigation-double_chevron_left");
+}
+
+.icon-sys-navigation-double_chevron_right::before {
+  content: map-get($system-icon-map, "navigation-double_chevron_right");
+}
+
+.icon-sys-navigation-expand_less::before {
+  content: map-get($system-icon-map, "navigation-expand_less");
+}
+
+.icon-sys-navigation-expand_more::before {
+  content: map-get($system-icon-map, "navigation-expand_more");
+}
+
+.icon-sys-registry-annual_filing::before {
+  content: map-get($system-icon-map, "registry-annual_filing");
+}
+
+.icon-sys-registry-charge_registration::before {
+  content: map-get($system-icon-map, "registry-charge_registration");
+}
+
+.icon-sys-registry-close_a_local_company::before {
+  content: map-get($system-icon-map, "registry-close_a_local_company");
+}
+
+.icon-sys-registry-make_changes::before {
+  content: map-get($system-icon-map, "registry-make_changes");
+}
+
+.icon-sys-registry-start_company::before {
+  content: map-get($system-icon-map, "registry-start_company");
+}
+
+.icon-sys-registry-update_share_info::before {
+  content: map-get($system-icon-map, "registry-update_share_info");
+}
+
+.icon-sys-state-error::before {
+  content: map-get($system-icon-map, "state-error");
+}
+
+.icon-sys-state-informative::before {
+  content: map-get($system-icon-map, "state-informative");
+}
+
+.icon-sys-state-success::before {
+  content: map-get($system-icon-map, "state-success");
+}
+
+.icon-sys-state-warning::before {
+  content: map-get($system-icon-map, "state-warning");
+}
+
+.icon-sys-toggle-checkbox_checked_fill::before {
+  content: map-get($system-icon-map, "toggle-checkbox_checked_fill");
+}
+
+.icon-sys-toggle-checkbox_checked_outline::before {
+  content: map-get($system-icon-map, "toggle-checkbox_checked_outline");
+}
+
+.icon-sys-toggle-checkbox_indeterminate_fill::before {
+  content: map-get($system-icon-map, "toggle-checkbox_indeterminate_fill");
+}
+
+.icon-sys-toggle-checkbox_indeterminate_outline::before {
+  content: map-get($system-icon-map, "toggle-checkbox_indeterminate_outline");
+}
+
+.icon-sys-toggle-checkbox_unchecked::before {
+  content: map-get($system-icon-map, "toggle-checkbox_unchecked");
+}
+
+.icon-sys-toggle-radiobutton_selected::before {
+  content: map-get($system-icon-map, "toggle-radiobutton_selected");
+}
+
+.icon-sys-toggle-radiobutton_unselected::before {
+  content: map-get($system-icon-map, "toggle-radiobutton_unselected");
+}
